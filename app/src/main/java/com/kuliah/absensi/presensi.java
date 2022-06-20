@@ -31,7 +31,6 @@ public class presensi extends AppCompatActivity {
         String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
 
         txNama = findViewById(R.id.txNama);
-        txNis = findViewById(R.id.txNis);
         btnpas = findViewById(R.id.btnpas);
 
 
@@ -40,7 +39,6 @@ public class presensi extends AppCompatActivity {
         tlp = getIntent().getStringExtra("telpon");
 
         txNama.setText(nma);
-        txNis.setText(tlp);
 
         btnpas.setOnClickListener(new View.OnClickListener() {
             @Override
